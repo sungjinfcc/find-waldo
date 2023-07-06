@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function Leaderboard({ records, setRecords, firebase }) {
   const compareTimes = (timeA, timeB) => {
@@ -28,21 +29,24 @@ function Leaderboard({ records, setRecords, firebase }) {
 
   return (
     <div className="leaderboard">
-      <Header />
-      <div className="leader-container">
-        <h1>Rank</h1>
-        {records.length === 0 ? (
-          <p>No records!</p>
-        ) : (
-          records.map((leader, index) => {
-            return (
-              <p>
-                {index + 1} : {leader.name} / {leader.record}
-              </p>
-            );
-          })
-        )}
+      <div className="non-footer">
+        <Header />
+        <div className="leader-container">
+          <h1>Rank</h1>
+          {records.length === 0 ? (
+            <p>No records!</p>
+          ) : (
+            records.map((leader, index) => {
+              return (
+                <p>
+                  {index + 1} : {leader.name} / {leader.record}
+                </p>
+              );
+            })
+          )}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
