@@ -161,7 +161,7 @@ function Game({ addRecord }) {
         <img
           ref={imageRef}
           className="game-image"
-          src="/assets/background.png"
+          src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/background.png"
           alt="Background"
         />
       </div>

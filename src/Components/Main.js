@@ -12,8 +12,8 @@ function Main() {
           <div className="card">
             <img
               className="thumbnail-image"
-              alt="game1"
-              src="/assets/background.png"
+              alt="thumbnail"
+              src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/background.png"
             />
             <Link to="/game">
               <button type="button">Start</button>
