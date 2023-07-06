@@ -7,17 +7,17 @@ function Timer({ time }) {
       <h1>{time}</h1>
       <img
         className="character minion"
-        src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/minion.png"
+        src={`${process.env.PUBLIC_URL}/assets/minion.png`}
         alt="minion"
       />
       <img
         className="character batman"
-        src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/batman.png"
+        src={`${process.env.PUBLIC_URL}/assets/batman.png`}
         alt="batman"
       />
       <img
         className="character link"
-        src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/link.jpg"
+        src={`${process.env.PUBLIC_URL}/assets/link.jpg`}
         alt="link"
       />
       <Link to="/">Back</Link>

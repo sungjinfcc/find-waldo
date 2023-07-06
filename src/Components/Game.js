@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Timer from "./Timer";
 
 function Game({ addRecord }) {
+  const imageUrl = `${process.env.PUBLIC_URL}/assets/background.png`;
   const navigate = useNavigate();
   const [startTime] = useState(new Date().getTime());
   const [currentTime, setCurrentTime] = useState(null);
@@ -161,7 +162,7 @@ function Game({ addRecord }) {
         <img
           ref={imageRef}
           className="game-image"
-          src="https://github.com/sungjinfcc/find-waldo/blob/main/public/assets/background.png"
+          src={imageUrl}
           alt="Background"
         />
       </div>
