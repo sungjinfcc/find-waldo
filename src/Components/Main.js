@@ -11,7 +11,7 @@ function Main() {
           <img
             className="thumbnail-image"
             alt="game1"
-            src="https://github.com/JCarlosLucio/where-is-waldo/blob/master/src/assets/the-loc-nar.jpg?raw=true"
+            src="/assets/background.png"
           />
           <Link to="/game">
             <button type="button">Start</button>

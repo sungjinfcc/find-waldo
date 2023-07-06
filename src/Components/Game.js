@@ -64,7 +64,6 @@ function Game({ addRecord }) {
     const { top: imageTop, left: imageLeft } = imageRect;
     const x = (clientX - imageLeft) / containerWidth;
     const y = (clientY - imageTop) / containerHeight;
-    console.log(`clicked: ${x},${y}`);
 
     let correctGuess = false;
 
@@ -131,10 +130,6 @@ function Game({ addRecord }) {
     const overlay = document.querySelector(".overlay");
     modal.classList.add("active");
     overlay.classList.add("active");
-    /*
-    submit
-          save to leaderboard(firebase)
-    */
   };
   const showModalWrong = () => {
     const modal = document.querySelector(".wrong");
@@ -150,7 +145,7 @@ function Game({ addRecord }) {
     const overlay = document.querySelector(".overlay");
     modal.classList.remove("active");
     overlay.classList.remove("active");
-    navigate("/leaderboard");
+    navigate("/");
   };
 
   return (
@@ -166,8 +161,8 @@ function Game({ addRecord }) {
         <img
           ref={imageRef}
           className="game-image"
-          src="https://github.com/JCarlosLucio/where-is-waldo/blob/master/src/assets/the-loc-nar.jpg?raw=true"
-          alt="Where's Waldo"
+          src="/assets/background.png"
+          alt="Background"
         />
       </div>
       <div className="modal">

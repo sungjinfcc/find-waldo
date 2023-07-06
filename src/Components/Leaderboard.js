@@ -23,7 +23,8 @@ function Leaderboard({ records, setRecords, firebase }) {
     };
 
     fetchRecords();
-  }, [firebase.getRecords]);
+    return () => {};
+  }, []);
 
   return (
     <div className="leaderboard">

@@ -31,11 +31,3 @@ function App() {
 }
 
 export default App;
-
-/*
-  Playing
-    characer to find at top (hover to zoom)
-      click 
-        right: leave mark
-        wrong: show snackbar
-*/
